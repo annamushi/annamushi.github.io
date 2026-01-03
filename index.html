@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Anna Mushi – CV</title>
+  <meta name="description" content="Program Manager | Cloud & Data & AI | Project Delivery" />
+  <meta property="og:title" content="Anna Mushi – CV" />
+  <meta property="og:description" content="Program Manager | Cloud & Data & AI | Project Delivery" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://annamushi.github.io/" />
+  https://fonts.googleapis.com
+  https://fonts.gstatic.com
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap   :root {
+      --bg: #0f172a;          /* slate-900 */
+      --card: #111827;        /* gray-900 */
+      --text: #e5e7eb;        /* gray-200 */
+      --muted: #94a3b8;       /* slate-400 */
+      --accent: #38bdf8;      /* sky-400 */
+      --accent-2: #22d3ee;    /* cyan-400 */
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; min-height: 100vh;
+      font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      background: radial-gradient(1200px 600px at 10% 10%, rgba(56,189,248,0.08), transparent),
+                  radial-gradient(1200px 600px at 90% 90%, rgba(34,211,238,0.08), transparent),
+                  var(--bg);
+      color: var(--text);
+      display: grid; place-items: center; padding: 32px;
+    }
+    .card {
+      width: 100%; max-width: 860px; background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border: 1px solid rgba(148,163,184,0.15); border-radius: 16px; backdrop-filter: blur(6px);
+      box-shadow: 0 30px 60px rgba(0,0,0,0.35);
+      overflow: hidden;
+    }
+    .top {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 24px; padding: 28px 28px 8px;
+    }
+    .avatar {
+      width: 108px; height: 108px; border-radius: 999px; border: 2px solid rgba(148,163,184,0.3);
+      background: url('assets/img/profile.jpg') center/cover no-repeat; /* change path if needed */
+      flex: 0 0 108px;
+    }
+    .info { flex: 1 1 300px; min-width: 260px; }
+    .name { font-size: 28px; font-weight: 700; letter-spacing: 0.2px; }
+    .role { font-size: 16px; color: var(--muted); margin-top: 4px; }
+    .location { font-size: 14px; color: var(--muted); margin-top: 6px; }
+
+    .links { display: flex; flex-wrap: wrap; gap: 10px; padding: 12px 28px 24px; }
+    .chip {
+      display: inline-flex; align-items: center; gap: 8px; padding: 10px 14px; border-radius: 999px;
+      border: 1px solid rgba(148,163,184,0.2); color: var(--text); text-decoration: none; font-weight: 600; font-size: 14px;
+    }
+    .chip:hover { border-color: rgba(56,189,248,0.6); color: #fff; }
+
+    .body { padding: 0 28px 28px; }
+    .summary { color: var(--muted); line-height: 1.6; font-size: 15px; }
+
+    .cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 18px; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+      padding: 12px 18px; border-radius: 10px; font-weight: 700; text-decoration: none; font-size: 15px;
+      border: 1px solid rgba(148,163,184,0.25);
+    }
+    .btn.view { background: linear-gradient(90deg, var(--accent), var(--accent-2)); color: #0b1220; border: none; }
+    .btn.download { background: transparent; color: var(--text); }
+    .btn:hover { transform: translateY(-1px); box-shadow: 0 10px 20px rgba(0,0,0,0.25); }
+
+    footer { text-align: center; color: var(--muted); font-size: 12px; padding: 10px 0 0 0; }
+  </style>
+</head>
+<body>
+  <main class="card" role="main">
+    <div class="top">
+      <div class="avatar" aria-hidden="true"></div>
+      <div class="info">
+        <div class="name">Anna Mushi</div>
+        <div class="role">Program Manager · Cloud & Data & AI · Project Delivery</div>
+        <div class="location">Dublin, Ireland</div>
+      </div>
+    </div>
+    <div class="links">
+      mailto:annamushi1@gmail.com📧 annamushi1@gmail.com</a>
+      tel:+353868268875📞 +353 86 826 8875</a>
+      <a class="chip" href="https://www.linkedin.com/in/annamushi-131142b6" target="_blank"m/annamushi💻 GitHub</a>
+    </div>
+    <div class="body">
+      <p class="summary">
+        Technical Program Manager experienced in delivering cloud migrations, enterprise application upgrades, and feature rollouts across SaaS, PaaS, and IaaS platforms. Skilled in Agile and Waterfall delivery, automation using Python, PowerShell, and Microsoft 365 Power Automate, with a strong background in governance, risk management, and cross‑functional stakeholder alignment.
+      </p>
+      <div class="cta">
+        Anna%20Mushi_CV.pdfView CV</a>
+        <a class="hi_CV.pdfDownload CV</a>
+      </div>
+    </div>
+    <footer>
+      © <span id="year"></span> Anna Mushi · annamushi.github.io
+    </footer>
+  </main>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
